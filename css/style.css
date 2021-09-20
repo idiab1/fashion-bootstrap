@@ -1,0 +1,85 @@
+/* Staet Global Rule */
+:root{
+	--main-color: #ff6565;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+/* End Global Rule */
+
+/* Start Navbar */
+.navbar{
+	position: fixed;
+	top : 0;
+	left : 0;
+	width : 100%;
+	padding : 15px 0;
+	background : transparent;
+}
+.navbar .navbar-brand {
+	font-family: "Kaushan Script";
+	font-size: 35px;
+	color : var(--main-color);
+}
+.navbar .navbar-toggler i{
+	color : var(--main-color);
+}
+.navbar ul li{
+	padding-right : 10px;
+}
+.navbar ul li a {
+	color : #DDD;
+	letter-spacing : 1px;
+	font-size: 16px;
+	text-transform : uppercase;
+	transition: all .25s ease-in;
+	font-weight: 600;
+}
+.navbar ul li a.active {
+	color: var(--main-color);
+}
+.navbar ul li a:hover{
+	color : var(--main-color);
+}
+.scrolled {
+	padding : 0;
+	background-color : rgb(7, 7, 7) !important;
+}
+.selected{
+	background-color : rgb(7, 7, 7) !important;
+}
+
+/* End Navbar */
+
+/* Start Header */
+.header{
+  min-height : 100vh;
+  background : linear-gradient(rgb(0 0 0 / 78%), rgb(0 0 0 / 38%)), 
+            url(../images/bg.jpg) no-repeat center center ;
+  -webkit-background-size : cover;
+  -moz-background-size : cover;
+  -o-background-size : cover;
+  background-size : cover;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-info{
+  color : #FFF;
+}
+.header .header-info p{
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.header .header-info h1 {
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header .header-info button:hover {
+  opacity: .9;
+}
+/* End Header */
