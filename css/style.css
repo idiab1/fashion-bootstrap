@@ -304,7 +304,31 @@ body{
   background : #FFF;
 }
 /* End sponsared */
-
+/* Start Contact */
+.contact {
+  min-height: 650px;
+  background: url(../images/map.jpg) no-repeat center center;
+}
+.contact h2{
+  color : #FFF;
+}
+.contact .header-section .discraption{
+  color: #a9a9a9;
+}
+.contact .content-form{
+  padding-top: 10%;
+}
+.contact .content-form form textarea {
+  min-height: 195px;
+}
+.contact .content-form button {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contact .content-form button:hover {
+  background: var(--main-color);
+}
+/* End Contact */
 
 
 
@@ -342,6 +366,12 @@ body{
   -o-border-radius: 5px;
 }
 
+.contact-btn{
+	margin-bottom: 0;
+	padding: 12px 24px;
+	font-size: 17px;
+}
+
 /* End of Buttons */
 
 /* Grouping */
@@ -356,7 +386,8 @@ body{
   -ms-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
 }
-.header{
+.header,
+.contact{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -376,7 +407,8 @@ body{
 .services,
 .portfolio,
 .about,
-.our-team{
+.our-team,
+.contact{
   padding: 50px 0;
 }
 
@@ -398,6 +430,18 @@ body{
   
 }
 
+
+.contact .content-form form input[type="text"],
+.contact .content-form form input[type="email"],
+.contact .content-form form input[type="number"],
+.contact .content-form form textarea {
+  padding: 23px 0px;
+  text-indent: 10px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-style: italic;
+  color: #aaa;
+}
 
 
 /* End of Grouping */
