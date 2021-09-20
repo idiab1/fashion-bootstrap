@@ -182,7 +182,7 @@ body{
   padding-bottom: 80px;
 }
 .about .timeline .box .timeline-info{
-  width: 80%;
+	width: 78%;
 }
 .about .timeline .box .timeline-info.special{
   width: 78%;
@@ -190,7 +190,7 @@ body{
 }
 .about .timeline .box .timeline-info img {
   position: absolute;
-  left: 89%;
+  left: 87%;
   top: 0%;
   width: 120px;
   height: 120px;
@@ -199,7 +199,7 @@ body{
 }
 .about .timeline .box .timeline-info img.right{
   position: absolute;
-  left: -11%;
+  left: -13%;
   top: 0%;
   width: 120px;
   height: 120px;
@@ -214,13 +214,13 @@ body{
 }
 .about .timeline .box .timeline-info h5 {
   margin: 0;
-  padding: 15px 0px 10px;
+	padding: 10px 0px;
   font-size: 35px;
   font-weight: bold;
 }
 .about .timeline .box .timeline-info p {
   color: #595959;
-  line-height: 1.7;
+  line-height: 1.6;
   letter-spacing: 1px;
   margin: 0;
   font-size: 17px;
@@ -233,7 +233,7 @@ body{
 .about .timeline .box-story:before{
   content : "";
   position : absolute;
-  left : 89%;
+  left : 88%;
   width : 120px;
   height: 120px;
   background : var(--main-color);
