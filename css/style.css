@@ -56,10 +56,6 @@ body{
   min-height : 100vh;
   background : linear-gradient(rgb(0 0 0 / 78%), rgb(0 0 0 / 38%)), 
             url(../images/bg.jpg) no-repeat center center ;
-  -webkit-background-size : cover;
-  -moz-background-size : cover;
-  -o-background-size : cover;
-  background-size : cover;
   display : flex;
   justify-content: center;
   align-items: center;
@@ -86,42 +82,186 @@ body{
 
 /* Start Services */
 
-/*.services .services-info{
-  padding: 40px 0;
-}*/
+/* .services .services-info{
+  padding-top: 40px;
+} */
 .services .services-info h3{
   font-weight: bold;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 30px;
   margin: 0;
 }
+.services .services-info .service-icon{
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	margin: auto;
+	background-color: var(--main-color);
+}
 .services .services-info i{
-  width: 60px;
-  height: 60px;
-  background: var(--main-color);
   color: #FFF;
-  border-radius: 50%;
-  line-height: 60px;
-  font-size: 25px;
+  font-size: 24px;
 }
 .services .services-info p{
   color: #595959;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
   font-size: 17px;
-  padding-bottom: 15px;
 }
 /*End Services */
+/* Start portfolio */
+.portfolio .portfolio-image{
+  padding-bottom: 35px;
+}
+.portfolio .portfolio-image .content{
+  position : relative;
+  overflow : hidden;
+}
+.portfolio .portfolio-image .content .view {
+  position: absolute;
+  top : 0;
+  left : 0;
+  bottom : 0;
+  right : 0;
+  width : 100%;
+  height : 100%;
+  background: var(--main-color);
+  color : #FFF;
+  opacity : 0;
+	line-height: 217px;
+  cursor : pointer;
+}
+.portfolio .portfolio-image .content:hover .view {
+  opacity: 1;
+}
+.portfolio .portfolio-image .portfolio-info{
+  padding : 20px 0;
+  background : #FFF;
+}
+.portfolio .portfolio-image .portfolio-info h4{
+  font-size: 25px;
+  font-weight : bold;
+  color: #111;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.portfolio .portfolio-image .portfolio-info span {
+  font-size: 16px;
+  color: #595959;
+  font-style : italic;
+}
 
+/*End portfolio */
 
-
+/* Start about */
+.about .timeline{
+  position : relative;
+  margin : 80px 0 150px;
+}
+.about .timeline:after{
+  position : absolute;
+  content : "";
+  top : 0;
+  bottom : 0;
+  left : 50%;
+  width: 3px;
+  background: #686868;
+  margin-left: -1.5px;
+}
+.about .timeline .box {
+  position : relative;
+  width : 50%;
+  padding-bottom : 50px;
+  padding-top: 25px;
+}
+.about .timeline .box.right {
+  top : 20px;
+  right: -50%;
+  padding-bottom: 80px;
+}
+.about .timeline .box .timeline-info{
+  width: 80%;
+}
+.about .timeline .box .timeline-info.special{
+  width: 78%;
+  margin-left: 100px;
+}
+.about .timeline .box .timeline-info img {
+  position: absolute;
+  left: 89%;
+  top: 0%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #686868;
+  z-index: 1;
+}
+.about .timeline .box .timeline-info img.right{
+  position: absolute;
+  left: -11%;
+  top: 0%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid #686868;
+  z-index: 1;
+}
+.about .timeline .box .timeline-info .date{
+  margin: 0;
+  font-weight: bold;
+  font-size: 19px;
+  color: #686868;
+}
+.about .timeline .box .timeline-info h5 {
+  margin: 0;
+  padding: 15px 0px 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.about .timeline .box .timeline-info p {
+  color: #595959;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 17px;
+}
+.about .timeline .box-story {
+  position: relative;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.about .timeline .box-story:before{
+  content : "";
+  position : absolute;
+  left : 89%;
+  width : 120px;
+  height: 120px;
+  background : var(--main-color);
+  color : #FFF;
+  border-radius : 50%;
+  border : 3px solid #686868;
+  z-index : 1;
+}
+.about .timeline .box-story p{
+  margin: 0;
+  position: absolute;
+  left: 95%;
+  top: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+  color: #000;
+  padding: 0px;
+  line-height: 18px;
+}
+/*End about */
 
 
 
 
 /* Our framework */
 .header-section{
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .header-section h2{
   font-weight: bold;
@@ -130,12 +270,62 @@ body{
   margin: 0;
 }
 .header-section .discraption {
-  padding-top: 10px;
   margin: 0;
   color: #595959;
   font-style: italic;
 }
 
 /* End of Our framework */
+
+/* Buttons */
+.crayons-btn{
+	padding: 15px 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  border: none;
+  background-color: var(--main-color);
+  color: #000;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* End of Buttons */
+
+/* Grouping */
+.navbar,
+.navbar ul li a,
+.header .header-info button,
+.portfolio .portfolio-image .content .view{
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+}
+.header{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.services,
+.portfolio,
+.about{
+  padding: 50px 0;
+}
+
+
+.portfolio {
+  background: #f6f6f6;
+}
+
+
+
+/* End of Grouping */
 
 
