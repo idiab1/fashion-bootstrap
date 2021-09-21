@@ -11,7 +11,20 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
+// Add class list active in navbar link when click
+// Select on navbar link
+const navLinks = document.querySelectorAll('.navbar .navbar-nav .nav-link')
 
+navLinks.forEach(navlink => {
+    navlink.addEventListener('click', (e) =>{
+        e.preventDefault();
+        const active = document.querySelector('.nav-link.active');
+        if(active){
+            active.classList.remove('active');
+        }
+        e.currentTarget.classList.add('active')
+    })
+})
 
 
 // Show & hide button top when scroll
