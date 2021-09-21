@@ -11,6 +11,24 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
+// Adjust create typer write in header
+let typer = document.querySelector('.typer'),
+    theText = document.querySelector('.typer').getAttribute('data-text'),
+    theTextLength = theText.length,
+    n = 0;
+
+    // typer.innerHTML  =  theText
+
+    (function theTyper(){
+        if(n < theTextLength ){
+            typer.innerHTML  +=  theText.charAt(n);
+            n++;
+            setTimeout(theTyper, 200)
+        }
+    })()
+
+
+
 // Add class list active in navbar link when click
 // Select on navbar link
 const navLinks = document.querySelectorAll('.navbar .navbar-nav .nav-link')
