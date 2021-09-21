@@ -23,6 +23,7 @@ navLinks.forEach(navlink => {
             active.classList.remove('active');
         }
         e.currentTarget.classList.add('active')
+     
     })
 })
 
@@ -48,3 +49,12 @@ buttonTop.addEventListener("click", () =>{
     })
 })
 
+
+// Scrolling method
+function scrolling(element){
+    window.scrollTo({
+        behavior: "smooth",
+        left: 0,
+        top: element.offsetTop - 50
+    })
+}
