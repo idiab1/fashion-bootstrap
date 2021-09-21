@@ -1,3 +1,19 @@
+// Change background color for navbar 
+// Select on navbar & header components
+const navbar = document.querySelector('.navbar');
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', ()=>{
+    if(this.scrollY >= header.clientHeight){
+        navbar.classList.add('scrolled');
+    }else{
+        navbar.classList.remove('scrolled')
+    }
+})
+
+
+
+
 // Show & hide button top when scroll
 // Select on button top element
 const buttonTop = document.querySelector(".button-top");
