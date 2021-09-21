@@ -330,6 +330,41 @@ body{
 }
 /* End Contact */
 
+/* Start Footer */
+.footer{
+  padding : 40px 0 ;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  background : #000;
+  border-top: 2px solid var(--main-color);
+}
+
+.footer .footer-info p {
+  color : #fff;
+  line-height : 2;
+  font-size: 18px;
+	margin: 0;
+}
+.footer strong {
+  color : var(--main-color);
+}
+.footer ul {
+  margin: 0;
+}
+.footer ul li {
+  display : inline-block;
+  cursor : pointer;
+  padding-left : 15px;
+}
+.footer ul li i{
+  background: #383d41 !important;
+  color: var(--main-color) !important;
+}
+
+/* End Footer */
+
+
 
 
 /* Our framework */
@@ -369,7 +404,7 @@ body{
 .contact-btn{
 	margin-bottom: 0;
 	padding: 12px 24px;
-	font-size: 17px;
+	font-size: 16px;
 }
 
 /* End of Buttons */
@@ -379,7 +414,8 @@ body{
 .navbar ul li a,
 .header .header-info button,
 .portfolio .portfolio-image .content .view, 
-.our-team .team ul li i{
+.our-team .team ul li i,
+.footer ul li i{
   transition: all .25s ease-in-out;
   -webkit-transition: all .25s ease-in-out;
   -moz-transition: all .25s ease-in-out;
@@ -396,7 +432,8 @@ body{
 
 .services .services-info .service-icon,
 .about .timeline .box-story:before,
-.our-team .team ul li i {
+.our-team .team ul li i,
+.footer ul li i {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -419,7 +456,8 @@ body{
 }
 
 
-.our-team .team ul li i {
+.our-team .team ul li i,
+.footer ul li i{
   font-size: 16px;
   width: 40px;
   height: 40px;
