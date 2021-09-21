@@ -4,7 +4,7 @@ const navbar = document.querySelector('.navbar');
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll', ()=>{
-    if(this.scrollY >= header.clientHeight){
+    if(this.scrollY >= header.clientHeight /2){
         navbar.classList.add('scrolled');
     }else{
         navbar.classList.remove('scrolled')
@@ -15,7 +15,9 @@ window.addEventListener('scroll', ()=>{
 // Select on navbar link
 const navLinks = document.querySelectorAll('.navbar .navbar-nav .nav-link')
 
+
 navLinks.forEach(navlink => {
+    // Remove class active and add to current target 
     navlink.addEventListener('click', (e) =>{
         e.preventDefault();
         const active = document.querySelector('.nav-link.active');
@@ -23,7 +25,9 @@ navLinks.forEach(navlink => {
             active.classList.remove('active');
         }
         e.currentTarget.classList.add('active')
-     
+        // Select on section by data scroll
+        let section = document.getElementById(navlink.getAttribute('data-scroll'))
+        scrolling(section)
     })
 })
 
