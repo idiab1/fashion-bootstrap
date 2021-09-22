@@ -11,13 +11,26 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
+
 // Adjust calculate height full screen for header
-if(navbar.classList.contains('nav-md')){
-    // Add margin top to body 
-    document.body.style.marginTop = navbar.clientHeight + "px";
-    // calculate the header
-    header.style.minHeight = window.innerHeight - navbar.clientHeight + "px";
-}
+// let mediumDevices = window.
+
+// if(window.innerWidth <= 991){
+//     console.log('True')
+//     navbar.classList.add('nav-md');
+// }
+
+
+// // if(navbar.classList.contains('nav-md')){
+// //     // Add margin top to body 
+// //     document.body.style.marginTop = navbar.clientHeight + "px";
+// //     // calculate the header
+// //     header.style.minHeight = window.innerHeight - navbar.clientHeight + "px";
+// // }else{
+// //     document.body.style.marginTop = 0 + "px";
+// //     header.style.minHeight = window.innerHeight;
+
+// // }
 
 // Adjust create typer write in header
 let typer = document.querySelector('.typer'),
