@@ -11,6 +11,14 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
+// Adjust calculate height full screen for header
+if(navbar.classList.contains('nav-md')){
+    // Add margin top to body 
+    document.body.style.marginTop = navbar.clientHeight + "px";
+    // calculate the header
+    header.style.minHeight = window.innerHeight - navbar.clientHeight + "px";
+}
+
 // Adjust create typer write in header
 let typer = document.querySelector('.typer'),
     theText = document.querySelector('.typer').getAttribute('data-text'),
