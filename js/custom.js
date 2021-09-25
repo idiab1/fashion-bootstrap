@@ -67,6 +67,27 @@ navLinks.forEach(navlink => {
     })
 })
 
+// Show and hide setting box when click on cog setting icon
+// Select on setting box icon
+const settingBoxIcon = document.querySelector(".setting-box .cog-box");
+// Select on setting box cog 
+const settingBoxCog = document.querySelector(".setting-box .cog-box i");
+// Select on setting box
+const settingBox = document.querySelector(".setting-box")
+
+
+settingBoxIcon.addEventListener("click", () => {
+
+    // Add fa-spin class list to cog setting 
+    settingBoxCog.classList.toggle("fa-spin");
+
+    // add open class list to setting box container
+    settingBox.classList.toggle("open")
+
+})
+
+
+
 
 // Show & hide button top when scroll
 // Select on button top element
