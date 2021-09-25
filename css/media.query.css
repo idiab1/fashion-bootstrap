@@ -939,6 +939,40 @@
 	/* End Footer */
 
 
+	/* Setting box */
+	.setting-box{
+		left: -300px;
+    width: 300px;
+	}
+	.open{
+		left: 0
+	}
+	.setting-box .cog-box{
+		right: -65px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 21px;
+	}
+	.setting-box .setting-color{
+    padding: 20px 30px;
+	}
+	.setting-box .setting-color h4{
+		font-size: 25px;
+	}
+	.setting-box .color-list{
+		list-style: none;
+		margin: 0;
+		padding-left: 10px;
+	}
+	.setting-box .color-list li{
+		padding: 15px;
+	}
+	.setting-box .color-list .active{
+		opacity: 1;
+	}
+	/* End setting box */
+
 	/* Buttons */
 	.crayons-btn{
 		padding: 18px 36px;
@@ -1018,12 +1052,34 @@
 		padding: 10px 0;
 	}
 	/* End of navbar */
-	.about {
-			/* display: none; */
+	/* Setting box */
+	.setting-box{
+		left: -250px;
+    width: 250px;
 	}
-	/*.navbar .navbar-collapse.show{
-			background-color: #000 !important;
-	}*/
+	.open{
+		left: 0
+	}
+	.setting-box .cog-box{
+		right: -50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+	}
+	
+	.setting-box .color-list{
+		list-style: none;
+		margin: 0;
+		padding-left: 10px;
+	}
+	.setting-box .color-list li{
+		padding: 12px;
+	}
+	.setting-box .color-list .active{
+		opacity: 1;
+	}
+	/* End setting box */
 } 
 
 
