@@ -86,7 +86,24 @@ settingBoxIcon.addEventListener("click", () => {
 
 })
 
+// Switch color
+const colorsLi = document.querySelectorAll(".setting-box .color-list li")
+// Loop on every li color
+colorsLi.forEach(colorLi => {
+    colorLi.addEventListener("click", e =>{
+        // Set property any li color
+        document.documentElement.style.setProperty("--main-color", e.target.dataset.color)
+        // Set to local storage
+        localStorage.setItem("color_option", e.target.dataset.color)
+        // Remove active class list from all children
+        e.target.parentElement.querySelectorAll(".active").forEach(element => {
+            element.classList.remove('active')
+        });
+        // Add active class list
+        e.target.classList.add("active")
 
+    })
+})
 
 
 // Show & hide button top when scroll
