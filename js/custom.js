@@ -105,6 +105,22 @@ colorsLi.forEach(colorLi => {
     })
 })
 
+// check if local storage color option
+const mainColors = localStorage.getItem("color_option")
+
+if(mainColors !== null){
+    document.documentElement.style.setProperty('--main-color', mainColors);
+
+    colorsLi.forEach(element => {
+        element.classList.remove('active')
+        // Add active on element
+        if(element.dataset.color === mainColors){
+            element.classList.add('active')
+        }
+    })
+
+}
+
 
 // Show & hide button top when scroll
 // Select on button top element
